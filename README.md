@@ -267,8 +267,12 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)***<br> 
+__Yes the ping is successful.__<br> 
+<img src="./images/pingoutput.png" width="70%">
+
+2. What is different from the previous ping in the section above? ***(1 mark)***<br>  
+__The previous ping failed with the error message ping: bad address 'c2' because c1 and c2 were on different networks (bluenet and rednet), and thus couldn't directly communicate. The current ping is successful because both c1 and c2 are now connected to a common network, bridgenet, which allows them to communicate with each other. The bridge network facilitates communication between containers that belong to different networks.__
 
 ## Intermediate Level (10 marks bonus)
 
