@@ -217,7 +217,7 @@ __Group: 1000__.
 <img src="./images/webpageQ1.png" width="70%">
 
 2. What port is the apache web server running. ***(1 mark)*** <br>
-__8080__.
+__80__.
 
 3. What port is open for http protocol on the host machine? ***(1 mark)*** <br>__8080__.<br>
 <img src="./images/portname.png" width="70%"><br>
