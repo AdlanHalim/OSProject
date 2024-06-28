@@ -241,20 +241,20 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
-__BusyBox is a set of Unix utilities which can be installed as standalone executable or added to existing software that includes it as a component. It includes many mainstream UNIX utilities in a small multiple purposes, functional and efficient piece of software making it perfect to use with embedded systems.__
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***<br>
+__BusyBox is a set of Unix utilities which can be installed as standalone executable or added to existing software that includes it as a component. It includes many mainstream UNIX utilities in a small multiple purposes, functional and efficient piece of software making it perfect to use with embedded systems.__<br>
 __The --name flag in Docker is used to assign a specific name to a container. Instead of having a randomly generated name, this flag allows to specify a human-readable and memorable name for easy reference.__
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
-<img src="./images/dockerNetwork.png" width="70%">
+<br><img src="./images/dockerNetwork.png" width="70%">
 
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** 
-__bluenet: 172.19.0.1__
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***<br> 
+__bluenet: 172.19.0.1__<br>
 __rednet: 172.20.0.1__
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** 
-__bluenet: 172.19.0.2__
+4. What is the network address for the running container c1 and c2? ***(1 mark)***<br> 
+__bluenet: 172.19.0.2__<br>
 __rednet: 172.20.0.2__
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** 
-__No__
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***<br> 
+__No__<br>
 <img src="./images/c1Pingc2.png" width="70%">
 
 ## Bridging two SUB Networks
