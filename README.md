@@ -415,8 +415,27 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)***<br><img src="./images/error.png" width="70%"><br>
+__This error occurs because the Node.js container is unable to connect to the MySQL container due to them being on separate Docker networks (mysqlnet and nodejsnet). Since they are not bridged together or interconnected via a shared network, the Node.js application running on nodejsnet cannot reach the MySQL database running on mysqlnet.__
+2. Show the instruction needed to make this work. ***(1 mark)***<br> 
+__1.Create a new network called bridgenet:__
+```sh
+docker network create bridgenet
+```
+__2.Connect both containers (mysql-container and nodejs-container) to the bridgenet network:__
+```sh
+docker network connect bridgenet mysql-container
+docker network connect bridgenet nodejs-container
+```
+__3.Verify that both containers are connected to the bridgenet network:__
+```sh
+docker network inspect bridgenet
+```
+__4.Verify that both containers are connected to the bridgenet network:__
+```sh
+docker restart nodejs-container
+```
+__By bridging the mysqlnet and nodejsnet networks with bridgenet, you enable communication between the MySQL database container (mysql-container) and the Node.js application container (nodejs-container). This allows the Node.js application to successfully connect to and query the MySQL database, resolving the Connection refused error.__
 
 
 
