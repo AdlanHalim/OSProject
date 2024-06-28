@@ -223,8 +223,7 @@ __Group: root__.
 __80__.
 
 3. What port is open for http protocol on the host machine? ***(1 mark)*** <br>__8080__.<br>
-<img src="./images/portname.png" width="70%"><br>
-<img src="./images/webpage.png" width="50%">
+<img src="./images/portname.png" width="70%"><br><img src="./images/webpage.png" width="50%">
 ## Create SUB Networks
 
 1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
