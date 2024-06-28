@@ -7,7 +7,7 @@ Section: __2__.
 Team Mates:
 1. __AHMAD ADLAN BIN ABDUL HALIM 2215775__
 2. __NUR ALYA AQILAH BINTI RAZAK RATNE 2216006__
-3. __Fill name__ and __matric no__
+3. __NUR ADILA BINTI AHMAD FAIZUL 2211868__
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
