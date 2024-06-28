@@ -153,7 +153,7 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)*** <br>
-__Files in a container are not permanent because containers are meant to be temporary and disposable. When a container is removed, its filesystem and any files within it are also deleted__.
+__Files in a container are not persistent because containers are meant to be temporary and disposable. When a container is removed, its filesystem and any files within it are also deleted__.
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** <br>
  __Yes, because each container functions as an independent Debian Linux system, enabling the simultaneous operation of multiple instances.__.
 
@@ -186,6 +186,8 @@ sudo chown -R codespace:codespace myroot
 <br>
 <img src="./images/rycQ2.png" width="70%">
 
+__Yes, can adjust the file permissions to user codespace, however it's essential to first stop the container to prevent conflicts with the currently active volume mount.__
+
 ## You are on your own, create your own static webpage
 
 1. Create a directory called webpage in your host machine
@@ -211,8 +213,9 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 ***Questions:***
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** <br>
-__User: 1000__ <br>
-__Group: 1000__.
+__The permission of folder /usr/local/apache/htdocs is drwxr-xr-x__ <br>
+__User: root__ <br>
+__Group: root__.
 <br>
 <img src="./images/webpageQ1.png" width="70%">
 
