@@ -6,7 +6,7 @@ Section: __2__.
 
 Team Mates:
 1. __AHMAD ADLAN BIN ABDUL HALIM 2215775__
-2. __Fill name__ and __matric no__
+2. __NUR ALYA AQILAH BINTI RAZAK RATNE 2216006__
 3. __Fill name__ and __matric no__
 
 ## Rules
@@ -152,8 +152,10 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** <br>
+__Files in a container are not permanent because containers are meant to be temporary and disposable. When a container is removed, its filesystem and any files within it are also deleted__.
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** <br>
+ __Yes, because each container functions as an independent Debian Linux system, enabling the simultaneous operation of multiple instances.__.
 
 ## Running your own container with persistent storage
 
@@ -172,14 +174,17 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** <br>
+__User: codespace__<br>
+__Group: codespace__.
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+<br>
+<img src="./images/rycQ2.png" width="70%">
 
 ## You are on your own, create your own static webpage
 
@@ -205,10 +210,18 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** <br>
+__User: 1000__ <br>
+__Group: 1000__.
+<br>
+<img src="./images/webpageQ1.png" width="70%">
 
+2. What port is the apache web server running. ***(1 mark)*** <br>
+__8080__.
+
+3. What port is open for http protocol on the host machine? ***(1 mark)*** <br>__8080__.<br>
+<img src="./images/portname.png" width="70%"><br>
+<img src="./images/webpage.png" width="50%">
 ## Create SUB Networks
 
 1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
