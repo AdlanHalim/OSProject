@@ -57,9 +57,9 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu__.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Option 1: 2core vCPU, 4GB RAM, 32GB disk, Option 2: 4core vCPU, 8GB RAM, 64GB disk__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Ensures changes are saved and shared with the team, maintain version control and prevent data loss__.
 
 ## Exploring the Terminal
 
@@ -76,23 +76,23 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ pwd /workspaces/OSProject__.
+2. Run the command **cat /etc/passwd** . ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ cat/etc/passwd bash: cat/etc/passwd: No such file or directory__.
+3. Run the command **df** . ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ df Filesystem 1K-blocks Used Available Use% Mounted on overlay 32847680 10380952 20772628 34% / tmpfs 65536 0 65536 0% /dev shm 65536 8 65528 1% /dev/shm /dev/root 30298176 24467728 5814064 81% /vscode /dev/sdb1 46127956 100 43752280 1% /tmp /dev/loop3 32847680 10380952 20772628 34% /workspaces__.
+4. Run the command **du** . ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ du 4 ./.git/branches 8 ./.git/objects/1b 8 ./.git/objects/83 8 ./.git/objects/47 8 ./.git/objects/71 12 ./.git/objects/62 8 ./.git/objects/58 12 ./.git/objects/73 8 ./.git/objects/a6 8 ./.git/objects/04 8 ./.git/objects/fd 12 ./.git/objects/e5 8 ./.git/objects/41 8 ./.git/objects/7b 8 ./.git/objects/24 8 ./.git/objects/c6 12 ./.git/objects/3d 8 ./.git/objects/0b 12 ./.git/objects/72 12 ./.git/objects/d2 8 ./.git/objects/86 8 ./.git/objects/c0 12 ./.git/objects/1c 8 ./.git/objects/a4 8 ./.git/objects/eb 12 ./.git/objects/bf 8 ./.git/objects/ab 12 ./.git/objects/ff 12 ./.git/objects/af 8 ./.git/objects/74 8 ./.git/objects/96 12 ./.git/objects/70 8 ./.git/objects/d8 8 ./.git/objects/91 8 ./.git/objects/c3 8 ./.git/objects/3a 12 ./.git/objects/17 12 ./.git/objects/2e 8 ./.git/objects/0d 8 ./.git/objects/52 12 ./.git/objects/29 8 ./.git/objects/fc 8 ./.git/objects/e7 16 ./.git/objects/fb 8 ./.git/objects/fa 8 ./.git/objects/2b 8 ./.git/objects/4b 8 ./.git/objects/f7 12 ./.git/objects/6e 8 ./.git/objects/d5 12 ./.git/objects/b5 8 ./.git/objects/49 8 ./.git/objects/60 8 ./.git/objects/fe 8 ./.git/objects/20 12 ./.git/objects/9d 8 ./.git/objects/f6 8 ./.git/objects/3f 8 ./.git/objects/a3 8 ./.git/objects/cd 8 ./.git/objects/f2 8 ./.git/objects/e0 8 ./.git/objects/b2 8 ./.git/objects/93 8 ./.git/objects/81 8 ./.git/objects/e9 8 ./.git/objects/cb 12 ./.git/objects/64 8 ./.git/objects/b9 8 ./.git/objects/b6 8 ./.git/objects/4f 8 ./.git/objects/4a 4 ./.git/objects/info 12 ./.git/objects/14 1828 ./.git/objects/pack 12 ./.git/objects/44 2508 ./.git/objects 8 ./.git/logs/refs/heads 8 ./.git/logs/refs/remotes/origin 12 ./.git/logs/refs/remotes 24 ./.git/logs/refs 32 ./.git/logs 68 ./.git/hooks 4 ./.git/lfs/tmp 8 ./.git/lfs 4 ./.git/refs/tags 8 ./.git/refs/heads 8 ./.git/refs/remotes/origin 12 ./.git/refs/remotes 28 ./.git/refs 8 ./.git/info 2684 ./.git 1972 ./images 4680__.
+5. Run the command **ls** . ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ ls README.md images__.
+6. Run the command **ls -asl** . ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ ls -asl total 40 4 drwxrwxrwx+ 4 codespace root 4096 Jun 18 23:33 . 4 drwxr-xrwx+ 5 codespace root 4096 Jun 18 23:33 .. 4 drwxrwxrwx+ 9 codespace root 4096 Jun 18 23:33 .git 24 -rw-rw-rw- 1 codespace root 20717 Jun 18 23:53 README.md 4 drwxrwxrwx+ 2 codespace root 4096 Jun 18 23:33 images__.
+7. Run the command **free -h** . ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ free -h total used free shared buff/cache available Mem: 7.7Gi 1.4Gi 243Mi 67Mi 6.1Gi 6.0Gi Swap: 0B 0B 0B__.
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ cat/proc/cpuinfo bash: cat/proc/cpuinfo: No such file or directory__.
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** __total used free shared buff/c top - 23:54:56 up 38 min, 0 users, load average: 0.08, 0.17, Tasks: 17 total, 1 running, 16 sleeping, 0 stopped, 0 z %Cpu(s): 3.5 us, 3.5 sy, 0.0 ni, 92.6 id, 0.2 wa, 0.0 hi, MiB Mem : 7929.6 total, 248.7 free, 1417.7 used, 6263. MiB Swap: 0.0 total, 0.0 free, 0.0 used. 6129. PID USER PR NI VIRT RES SHR S %CPU %MEM 2699 codespa+ 20 0 1347736 121592 45312 S 1.0 1.5 2781 codespa+ 20 0 21.5g 340464 49792 S 0.7 4.2 3232 codespa+ 20 0 1115784 60016 42240 S 0.3 0.7 1 codespa+ 20 0 1136 640 640 S 0.0 0.0 _.
+10. Run the command **uname -a**. ***(1 mark)*** __@AdlanHalim ➜ /workspaces/OSProject (main) $ uname -a Linux codespaces-243ada 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
+11. What is the available free memory in the system. ***(1 mark)*** __248.7MiB__.
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** __20,772,628 1K-blocks, 20.8GB__.
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Version 6.5.0-1021-azure x86_64__.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __ls lists the files and directories in current directory. ls -asl lists the files and directories in current directory in long format, including hidden files, and shows file sizes in blocks__.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __64 entries, 4 way associative__.
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __3237.525 MHz__.
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __PID 2699('codespa+') consume the most. 1.0% CPU usage__.
 
 ## Running your own container instance.
 
